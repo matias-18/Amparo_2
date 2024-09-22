@@ -47,4 +47,5 @@ public class PeticionController {
     public List<PeticionInfoDTO> findByEstado(@RequestParam String estado) {
         return peticionService.findByEstado(estado);
     }
+
 }

@@ -28,4 +28,5 @@ public class TrabajadorController {
     public TrabajadorDTO update(@PathVariable Long id, @RequestBody TrabajadorDTO trabajadorDto) {
         return trabajadorService.update(id, trabajadorDto);
     }
+
 }

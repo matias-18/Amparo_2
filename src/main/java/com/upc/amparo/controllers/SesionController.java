@@ -36,5 +36,4 @@ public class SesionController {
     public List<SesionInfoDTO> findByFechaBetween(@RequestParam LocalDate startDate, @RequestParam LocalDate endDate) {
         return sesionService.findByFechaBetween(startDate, endDate);
     }
-
 }

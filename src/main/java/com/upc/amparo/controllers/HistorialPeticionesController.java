@@ -28,5 +28,6 @@ public class HistorialPeticionesController {
     public Historial_PeticionesDTO update(@PathVariable Long id, @RequestBody Historial_PeticionesDTO historialPeticionesDto) {
         return historialPeticionesService.update(id, historialPeticionesDto);
     }
+
 }
 

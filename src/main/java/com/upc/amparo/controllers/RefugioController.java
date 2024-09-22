@@ -53,4 +53,5 @@ public class RefugioController {
     ) {
         return ResponseEntity.ok(refugioService.findByDepartamento(departamento));
     }
+
 }

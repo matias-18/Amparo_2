@@ -33,5 +33,4 @@ public class RolController {
         return rolService.update(id, rolDto);
     }
 
-
 }

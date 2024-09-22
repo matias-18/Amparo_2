@@ -36,4 +36,5 @@ public class EspecialidadController {
     public List<EspecialidadInfoDTO> findByNombre(@RequestParam String nombre) {
         return especialidadService.findByNombre(nombre);
     }
+
 }

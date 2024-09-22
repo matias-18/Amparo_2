@@ -44,4 +44,5 @@ public class UsuarioController {
         List<UsuarioInfoDTO> trabajadores = usuarioService.findTrabajadores();
         return new ResponseEntity<>(trabajadores, HttpStatus.OK);
     }
+
 }

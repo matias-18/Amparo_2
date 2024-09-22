@@ -27,4 +27,5 @@ public class VictimaController {
     public VictimaDTO update(@PathVariable Long id, @RequestBody VictimaDTO victimaDto) {
         return victimaService.update(id, victimaDto);
     }
+
 }

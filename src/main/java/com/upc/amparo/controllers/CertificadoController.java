@@ -29,4 +29,5 @@ public class CertificadoController {
     public CertificadoDTO update(@PathVariable Long id, @RequestBody CertificadoDTO certificadoDto) {
         return certificadoService.update(id, certificadoDto);
     }
+
 }
