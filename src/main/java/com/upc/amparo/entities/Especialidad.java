@@ -77,3 +77,5 @@ public class Especialidad {
         this.trabajador = trabajador;
     }
 }
+
+//Class Specialty

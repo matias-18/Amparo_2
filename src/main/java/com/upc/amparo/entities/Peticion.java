@@ -121,3 +121,4 @@ public class Peticion {
         this.peticionTrabajadores = peticionTrabajadores;
     }
 }
+//Class Request
