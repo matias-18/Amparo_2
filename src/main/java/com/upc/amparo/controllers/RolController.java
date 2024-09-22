@@ -23,12 +23,12 @@ public class RolController {
         return rolService.create(rolDto);
     }
 
-    @DeleteMapping("eliminar_roles")
+    @DeleteMapping("eliminar_roles/{id}")
     public void delete(@PathVariable Long id) {
         rolService.delete(id);
     }
 
-    @PutMapping("modificar_roles")
+    @PutMapping("modificar_roles/{id}")
     public RolDTO update(@PathVariable Long id, @RequestBody RolDTO rolDto) {
         return rolService.update(id, rolDto);
     }

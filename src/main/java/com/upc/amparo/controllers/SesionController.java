@@ -22,12 +22,12 @@ public class SesionController {
         return sesionService.create(sesionDto);
     }
 
-    @DeleteMapping("eliminar_sesiones")
+    @DeleteMapping("eliminar_sesiones/{id}")
     public void delete(@PathVariable Long id) {
         sesionService.delete(id);
     }
 
-    @PutMapping("modificar_sesiones")
+    @PutMapping("modificar_sesiones/{id}")
     public SesionDTO update(@PathVariable Long id, @RequestBody SesionDTO sesionDto) {
         return sesionService.update(id, sesionDto);
     }

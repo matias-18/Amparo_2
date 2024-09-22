@@ -26,13 +26,13 @@ public class RefugioController {
         return new ResponseEntity<>(createdRefugio, HttpStatus.CREATED);
     }
 
-    @DeleteMapping("/eliminar_refugio")
+    @DeleteMapping("/eliminar_refugio/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         refugioService.delete(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    @PutMapping("/modificar_refugio")
+    @PutMapping("/modificar_refugio/{id}")
     public ResponseEntity<RefugioDTO> update(@PathVariable Long id, @RequestBody RefugioDTO refugioDto) {
         RefugioDTO updatedRefugio = refugioService.update(id, refugioDto);
         return updatedRefugio != null ?

@@ -22,12 +22,12 @@ public class EspecialidadController {
         return especialidadService.create(especialidadDto);
     }
 
-    @DeleteMapping("eliminar_especialidad")
+    @DeleteMapping("eliminar_especialidad/{id}")
     public void delete(@PathVariable Long id) {
         especialidadService.delete(id);
     }
 
-    @PutMapping("modificar_especialidad")
+    @PutMapping("modificar_especialidad/{id}")
     public EspecialidadDTO update(@PathVariable Long id, @RequestBody EspecialidadDTO especialidadDto) {
         return especialidadService.update(id, especialidadDto);
     }

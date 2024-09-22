@@ -23,12 +23,12 @@ public class UsuarioController {
         return usuarioService.create(usuarioDto);
     }
 
-    @DeleteMapping("eliminar_usuarios")
+    @DeleteMapping("eliminar_usuarios/{id}")
     public void delete(@PathVariable Long id) {
         usuarioService.delete(id);
     }
 
-    @PutMapping("modificar_usuarios")
+    @PutMapping("modificar_usuarios/{id}")
     public UsuarioDTO update(@PathVariable Long id, @RequestBody UsuarioDTO usuarioDto) {
         return usuarioService.update(id, usuarioDto);
     }

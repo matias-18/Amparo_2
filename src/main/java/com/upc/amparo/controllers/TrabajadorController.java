@@ -19,12 +19,13 @@ public class TrabajadorController {
         return trabajadorService.create(trabajadorDto);
     }
 
-    @DeleteMapping("eliminar_trabajadores")
+    @DeleteMapping("/eliminar_trabajadores/{id}")
     public void delete(@PathVariable Long id) {
         trabajadorService.delete(id);
     }
 
-    @PutMapping("modificar_trabajadores")
+    // Cambia la ruta para incluir el 'id' como parte del PathVariable
+    @PutMapping("/modificar_trabajadores/{id}")
     public TrabajadorDTO update(@PathVariable Long id, @RequestBody TrabajadorDTO trabajadorDto) {
         return trabajadorService.update(id, trabajadorDto);
     }

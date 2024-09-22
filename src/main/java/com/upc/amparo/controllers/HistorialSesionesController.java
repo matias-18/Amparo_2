@@ -18,12 +18,12 @@ public class HistorialSesionesController {
         return historialSesionesService.create(historialSesionesDto);
     }
 
-    @DeleteMapping("eliminar_historial-sesiones")
+    @DeleteMapping("eliminar_historial-sesiones/{id}")
     public void delete(@PathVariable Long id) {
         historialSesionesService.delete(id);
     }
 
-    @PutMapping("modificar_historial-sesiones")
+    @PutMapping("modificar_historial-sesiones/{id}")
     public Historial_SesionesDTO update(@PathVariable Long id, @RequestBody Historial_SesionesDTO historialSesionesDto) {
         return historialSesionesService.update(id, historialSesionesDto);
     }

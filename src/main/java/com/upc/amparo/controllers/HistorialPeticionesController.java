@@ -19,12 +19,12 @@ public class HistorialPeticionesController {
         return historialPeticionesService.create(historialPeticionesDto);
     }
 
-    @DeleteMapping("eliminar_historial-peticiones")
+    @DeleteMapping("eliminar_historial-peticiones/{id}")
     public void delete(@PathVariable Long id) {
         historialPeticionesService.delete(id);
     }
 
-    @PutMapping("modificar_historial-peticiones")
+    @PutMapping("modificar_historial-peticiones/{id}")
     public Historial_PeticionesDTO update(@PathVariable Long id, @RequestBody Historial_PeticionesDTO historialPeticionesDto) {
         return historialPeticionesService.update(id, historialPeticionesDto);
     }

@@ -18,12 +18,12 @@ public class VictimaController {
         return victimaService.create(victimaDto);
     }
 
-    @DeleteMapping("eliminar_victimas")
+    @DeleteMapping("eliminar_victimas/{id}")
     public void delete(@PathVariable Long id) {
         victimaService.delete(id);
     }
 
-    @PutMapping("modificar_victimas")
+    @PutMapping("modificar_victimas/{id}")
     public VictimaDTO update(@PathVariable Long id, @RequestBody VictimaDTO victimaDto) {
         return victimaService.update(id, victimaDto);
     }

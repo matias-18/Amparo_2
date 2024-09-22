@@ -19,12 +19,12 @@ public class CertificadoController {
         return certificadoService.create(certificadoDto);
     }
 
-    @DeleteMapping("/eliminar_certificado")
+    @DeleteMapping("/eliminar_certificado/{id}")
     public void delete(@PathVariable Long id) {
         certificadoService.delete(id);
     }
 
-    @PutMapping("/modificar_certificado")
+    @PutMapping("/modificar_certificado/{id}")
     public CertificadoDTO update(@PathVariable Long id, @RequestBody CertificadoDTO certificadoDto) {
         return certificadoService.update(id, certificadoDto);
     }

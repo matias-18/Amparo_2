@@ -23,12 +23,12 @@ public class PeticionController {
         return peticionService.create(peticionDto);
     }
 
-    @DeleteMapping("eliminar_peticiones")
+    @DeleteMapping("eliminar_peticiones/{id}")
     public void delete(@PathVariable Long id) {
         peticionService.delete(id);
     }
 
-    @PutMapping("modificar_peticiones")
+    @PutMapping("modificar_peticiones/{id}")
     public PeticionDTO update(@PathVariable Long id, @RequestBody PeticionDTO peticionDto) {
         return peticionService.update(id, peticionDto);
     }

@@ -19,12 +19,12 @@ public class PeticionTrabajadorController {
         return peticionTrabajadorService.create(peticionTrabajadorDto);
     }
 
-    @DeleteMapping("eliminar_peticion-trabajador")
+    @DeleteMapping("eliminar_peticion-trabajador/{id}")
     public void delete(@PathVariable Long id) {
         peticionTrabajadorService.delete(id);
     }
 
-    @PutMapping("modificar_peticion-trabajador")
+    @PutMapping("modificar_peticion-trabajador/{id}")
     public PeticionTrabajdorDTO update(@PathVariable Long id, @RequestBody PeticionTrabajdorDTO peticionTrabajadorDto) {
         return peticionTrabajadorService.update(id, peticionTrabajadorDto);
     }

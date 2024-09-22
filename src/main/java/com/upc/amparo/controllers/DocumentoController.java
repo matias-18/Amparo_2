@@ -19,12 +19,12 @@ public class DocumentoController {
         return documentoService.create(documentoDto);
     }
 
-    @DeleteMapping("eliminar_documento")
+    @DeleteMapping("eliminar_documento/{id}")
     public void delete(@PathVariable Long id) {
         documentoService.delete(id);
     }
 
-    @PutMapping("/modificar_documento")
+    @PutMapping("/modificar_documento/{id}")
     public DocumentoDTO update(@PathVariable Long id, @RequestBody DocumentoDTO documentoDto) {
         return documentoService.update(id, documentoDto);
     }
