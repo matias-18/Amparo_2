@@ -13,3 +13,6 @@ public class EspecialidadInfoDTO {
     private String descripcion;
     private Long numero_colegiatura;
 }
+
+//Query: Especialidad
+

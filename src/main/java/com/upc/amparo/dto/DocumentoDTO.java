@@ -14,3 +14,4 @@ public class DocumentoDTO {
     private String tipo;
     private Long peticion_id;
 }
+

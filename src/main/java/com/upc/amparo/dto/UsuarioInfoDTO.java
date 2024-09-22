@@ -11,3 +11,5 @@ public class UsuarioInfoDTO {
     private Long id;
     private String nombreUsuario;
 }
+
+//Query: Usuario

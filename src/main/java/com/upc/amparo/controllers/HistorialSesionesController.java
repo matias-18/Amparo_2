@@ -28,3 +28,4 @@ public class HistorialSesionesController {
         return historialSesionesService.update(id, historialSesionesDto);
     }
 }
+

@@ -16,3 +16,5 @@ public class PeticionTrabajdorDTO {
     private Long trabajador_id;
     private Long peticion_id;
 }
+
+

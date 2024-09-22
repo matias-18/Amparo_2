@@ -65,3 +65,5 @@ public class Documento {
         this.peticion = peticion;
     }
 }
+
+//Class Document

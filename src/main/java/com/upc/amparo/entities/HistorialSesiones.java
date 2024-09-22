@@ -69,3 +69,4 @@ public class HistorialSesiones {
         this.sesiones = sesiones;
     }
 }
+//Class SessionHistory

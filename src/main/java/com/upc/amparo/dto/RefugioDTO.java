@@ -16,3 +16,4 @@ public class RefugioDTO {
     private String direccion;
     private String telefono;
 }
+

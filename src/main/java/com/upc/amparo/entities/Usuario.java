@@ -78,3 +78,4 @@ public class Usuario {
         this.roles = roles;
     }
 }
+//Class User
