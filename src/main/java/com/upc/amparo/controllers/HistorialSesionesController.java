@@ -27,4 +27,5 @@ public class HistorialSesionesController {
     public Historial_SesionesDTO update(@PathVariable Long id, @RequestBody Historial_SesionesDTO historialSesionesDto) {
         return historialSesionesService.update(id, historialSesionesDto);
     }
+
 }
