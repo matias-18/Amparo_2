@@ -20,3 +20,4 @@ public class PeticionDTO {
     private Long victima_id;
     private Long historial_peticiones_id;
 }
+

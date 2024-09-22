@@ -13,3 +13,6 @@ public class CertificadoDTO {
     private String descripcion;
     private Long especialidad_id;
 }
+
+
+

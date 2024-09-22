@@ -14,3 +14,4 @@ public class EspecialidadDTO {
     private Long numeroColegiatura;
     private Long trabajador_id;
 }
+
