@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 public class CertificadoController {
     final CertificadoService certificadoService;
 
-
     public CertificadoController(CertificadoService certificadoService) {
         this.certificadoService = certificadoService;
     }
