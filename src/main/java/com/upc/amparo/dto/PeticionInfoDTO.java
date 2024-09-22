@@ -16,3 +16,4 @@ public class PeticionInfoDTO {
     private LocalDate fecha;
     private String estado;
 }
+//Query: Peticion

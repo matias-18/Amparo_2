@@ -15,4 +15,6 @@ public class RefugioInfoDTO {
     private String distrito;
     private String direccion;
     private String telefono;
-} //Query refugio
+}
+
+//Query refugio

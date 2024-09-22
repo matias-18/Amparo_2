@@ -14,3 +14,5 @@ public class EspecialidadInfoDTO {
     private Long numero_colegiatura;
 }
 
+//Query: Especialidad
+

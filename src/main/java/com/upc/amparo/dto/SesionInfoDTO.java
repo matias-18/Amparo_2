@@ -19,3 +19,4 @@ public class SesionInfoDTO {
     private String linkSesion;
     private String linkGrabacion;
 }
+//Query: sesión
